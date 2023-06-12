@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "dm-haiku"
+version = "0.1.0"
+description = ""
+authors = ["Vojtěch Kubín <vojta.kubin@atol.capital>"]
+readme = "README.md"
+packages = [{include = "dm_haiku"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+absl-py = ">=0.7.1"
+jmp = ">=0.0.2"
+numpy = ">=1.18.0"
+tabulate = ">=0.8.9"
+jax = "^0.4.6"
+jaxlib = "^0.4.6"
+chex = ">=0.0.4"
+cloudpickle = ">=1.2.2"
+dill = "*"
+mock = ">=3.0.5"
+pytest-xdist = "*"
+virtualenv = "*"
+dm-tree = ">=0.1.1"
+tensorflow ="^2.9.1"
+optax= "^0.0.1"
+typing-extensions = {version= "^4.6.3",python="<3.8"}
+dataclasses = {version="==0.7", python="<3.7"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
